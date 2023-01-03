@@ -44,27 +44,33 @@ while(c <= 10)
 let d = 0;
 while(d <= 100)
 {
-    if(d%2 === 0)
-    {
-        console.log(`${d} Pair`);
-        d++;
-    }
-    else
-    {
-        console.log(`${d} Impair`);
-        d++;
-    }
-    
     while(d <= 50)
     {
-        d = d + 2;
-        console.log(d);
+        if(d%2 === 0)
+        {
+            console.log(`${d} Pair`);
+            d = d + 2;
+        }
+        else
+        {
+            console.log(`${d} Impair`);
+            d = d + 2;
+        }
     }
     
     while(d <= 100)
     {
-        d = d + 3;
-        console.log(d);
+        
+        if(d%2 === 0)
+        {
+            console.log(`${d} Pair`);
+            d = d + 3;
+        }
+        else
+        {
+            console.log(`${d} Impair`);
+            d = d + 3;
+        }
     }
 }
 
